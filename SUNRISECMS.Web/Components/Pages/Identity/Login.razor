@@ -1,0 +1,27 @@
+﻿@page "/Login"
+
+@using MudBlazor
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject NavigationManager Navigation
+
+
+<MudCard>
+    <MudCardContent>
+        <MudTextField Label="Email" @bind-Value="Email" />
+        <MudTextField Label="Password" @bind-Value="Password" InputType="InputType.Password" />
+        <MudButton OnClick="login">Login</MudButton>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    private string Email { get; set; }
+    private string Password { get; set; }
+
+    private async Task login()
+    {
+        var result = await SignInManager.PasswordSignInAsync(Email, Password, false, false);
+        if (result.Succeeded)
+            Navigation.NavigateTo("/");
+    }
+}

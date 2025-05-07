@@ -6,9 +6,21 @@ using Syncfusion.Blazor;
 using Syncfusion.Licensing;
 using SUNRISECMS.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add Identity Service
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 6;
+})
+.AddEntityFrameworkStores<SunriseCMSDbContext>()
+.AddDefaultTokenProviders()
+.AddDefaultUI();
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -44,7 +56,8 @@ else
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
