@@ -1,16 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SUNRISECMS.Infrastructure\SUNRISECMS.Infrastructure.csproj" />
-    <ProjectReference Include="..\SUNRISECMS.Shared\SUNRISECMS.Shared.csproj" />
-    <ProjectReference Include="..\SUNRISECMS.Web.Client\SUNRISECMS.Web.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,9 +17,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="MudBlazor" Version="8.6.0" />
-    <PackageReference Include="Syncfusion.Blazor" Version="29.1.41" />
-    <PackageReference Include="Syncfusion.Blazor.Themes" Version="29.1.41" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SUNRISECMS.Shared\SUNRISECMS.Shared.csproj" />
   </ItemGroup>
 
 </Project>

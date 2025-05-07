@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUNRISECMS", "SUNRISECMS\SUNRISECMS.csproj", "{9090B6E8-8884-44DB-8AC6-A5FA623CF723}"
 EndProject
@@ -9,6 +9,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUNRISECMS.Web", "SUNRISECMS.Web\SUNRISECMS.Web.csproj", "{BC03EB84-8486-4DAA-AC88-615D227A4918}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUNRISECMS.Web.Client", "SUNRISECMS.Web.Client\SUNRISECMS.Web.Client.csproj", "{6E6E464F-AA08-4705-800A-B674CE0BBBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUNRISECMS.Infrastructure", "SUNRISECMS.Infrastructure\SUNRISECMS.Infrastructure.csproj", "{302AEA8F-B674-4B25-BBA4-222CEC9F418E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{6E6E464F-AA08-4705-800A-B674CE0BBBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E6E464F-AA08-4705-800A-B674CE0BBBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E6E464F-AA08-4705-800A-B674CE0BBBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302AEA8F-B674-4B25-BBA4-222CEC9F418E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302AEA8F-B674-4B25-BBA4-222CEC9F418E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302AEA8F-B674-4B25-BBA4-222CEC9F418E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302AEA8F-B674-4B25-BBA4-222CEC9F418E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

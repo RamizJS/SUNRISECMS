@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using SUNRISECMS.Services;
 using SUNRISECMS.Shared.Services;
+using Syncfusion.Blazor;
 
 namespace SUNRISECMS
 {
@@ -20,6 +21,7 @@ namespace SUNRISECMS
             builder.Services.AddSingleton<IFormFactor, FormFactor>();
 
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddSyncfusionBlazor();
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
